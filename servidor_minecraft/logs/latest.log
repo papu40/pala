@@ -1,0 +1,456 @@
+[16Jul2026 09:34:01.539] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgeserver, --fml.forgeVersion, 47.4.10, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412, nogui]
+[16Jul2026 09:34:01.542] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.19 by Ubuntu; OS Linux arch amd64 version 6.8.0-1052-azure
+[16Jul2026 09:34:06.825] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forgeserver
+[16Jul2026 09:34:06.974] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/workspaces/pala/servidor_minecraft/libraries/org/spongepowered/mixin/0.8.5/mixin-0.8.5.jar%2363!/ Service=ModLauncher Env=SERVER
+[16Jul2026 09:34:07.551] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file /workspaces/pala/servidor_minecraft/libraries/net/minecraftforge/fmlcore/1.20.1-47.4.10/fmlcore-1.20.1-47.4.10.jar is missing mods.toml file
+[16Jul2026 09:34:07.553] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file /workspaces/pala/servidor_minecraft/libraries/net/minecraftforge/javafmllanguage/1.20.1-47.4.10/javafmllanguage-1.20.1-47.4.10.jar is missing mods.toml file
+[16Jul2026 09:34:07.555] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file /workspaces/pala/servidor_minecraft/libraries/net/minecraftforge/lowcodelanguage/1.20.1-47.4.10/lowcodelanguage-1.20.1-47.4.10.jar is missing mods.toml file
+[16Jul2026 09:34:07.558] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file /workspaces/pala/servidor_minecraft/libraries/net/minecraftforge/mclanguage/1.20.1-47.4.10/mclanguage-1.20.1-47.4.10.jar is missing mods.toml file
+[16Jul2026 09:34:07.979] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: Found 8 dependencies adding them to mods collection
+[16Jul2026 09:34:10.102] [main/INFO] [mixin/]: Compatibility level set to JAVA_17
+[16Jul2026 09:34:10.249] [main/ERROR] [mixin/]: Mixin config antixray.common.mixins.json does not specify "minVersion" property
+[16Jul2026 09:34:10.250] [main/ERROR] [mixin/]: Mixin config antixray.forge.mixins.json does not specify "minVersion" property
+[16Jul2026 09:34:10.283] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgeserver' with arguments [nogui]
+[16Jul2026 09:34:10.616] [main/INFO] [Radium Config/]: Loaded configuration file for Radium: 125 options available, 1 override(s) found
+[16Jul2026 09:34:10.635] [main/WARN] [mixin/]: Reference map 'graveyard-FORGE-forge-refmap.json' for graveyard-forge.mixins.json could not be read. If this is a development environment you can ignore this message
+[16Jul2026 09:34:10.976] [main/INFO] [ModernFix/]: Loaded configuration file for ModernFix 5.27.58+mc1.20.1: 110 options available, 0 override(s) found
+[16Jul2026 09:34:10.977] [main/INFO] [ModernFix/]: Applying Nashorn fix
+[16Jul2026 09:34:10.995] [main/INFO] [ModernFix/]: Applied Forge config corruption patch
+[16Jul2026 09:34:11.009] [main/WARN] [mixin/]: Reference map 'mixins.call_of_yucutan.refmap.json' for mixins.call_of_yucutan.json could not be read. If this is a development environment you can ignore this message
+[16Jul2026 09:34:11.269] [main/WARN] [Radium Config/]: Force-disabling mixin 'alloc.blockstate.StateMixin' as option 'mixin.alloc.blockstate' (added by mods [ferritecore]) disables it and children
+[16Jul2026 09:34:12.735] [main/INFO] [net.minecraftforge.coremod.CoreMod.placebo/COREMODLOG]: Patching IForgeItemStack#getEnchantmentLevel
+[16Jul2026 09:34:12.757] [main/INFO] [net.minecraftforge.coremod.CoreMod.placebo/COREMODLOG]: Patching IForgeItemStack#getEnchantmentLevel
+[16Jul2026 09:34:13.062] [main/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/Camera for invalid dist DEDICATED_SERVER
+[16Jul2026 09:34:13.063] [main/WARN] [mixin/]: Error loading class: net/minecraft/client/Camera (java.lang.RuntimeException: Attempted to load class net/minecraft/client/Camera for invalid dist DEDICATED_SERVER)
+[16Jul2026 09:34:13.063] [main/WARN] [mixin/]: @Mixin target net.minecraft.client.Camera was not found legendary_monsters.mixins.json:CameraInvoker
+[16Jul2026 09:34:13.602] [main/INFO] [MixinExtras|Service/]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.5.3).
+[16Jul2026 09:34:14.251] [main/WARN] [net.minecraft.SystemReport/]: Failed retrieving info for group hardware
+java.lang.NoClassDefFoundError: com/sun/jna/Platform
+	at oshi.SystemInfo.<clinit>(SystemInfo.java:60) ~[oshi-core-6.2.2.jar%2369!/:6.2.2]
+	at net.minecraft.SystemReport.m_143564_(SystemReport.java:52) ~[server-1.20.1-20230612.114412-srg.jar%23169!/:?]
+	at net.minecraft.SystemReport.m_143516_(SystemReport.java:82) ~[server-1.20.1-20230612.114412-srg.jar%23169!/:?]
+	at net.minecraft.SystemReport.<init>(SystemReport.java:52) ~[server-1.20.1-20230612.114412-srg.jar%23169!/:?]
+	at net.minecraft.CrashReport.<init>(CrashReport.java:31) ~[server-1.20.1-20230612.114412-srg.jar%23169!/:?]
+	at net.minecraft.CrashReport.m_127529_(CrashReport.java:216) ~[server-1.20.1-20230612.114412-srg.jar%23169!/:?]
+	at net.minecraft.server.Main.main(Main.java:116) ~[server-1.20.1-20230612.114412-srg.jar%23169!/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:569) ~[?:?]
+	at net.minecraftforge.fml.loading.targets.CommonLaunchHandler.runTarget(CommonLaunchHandler.java:111) ~[fmlloader-1.20.1-47.4.10.jar%2367!/:?]
+	at net.minecraftforge.fml.loading.targets.CommonLaunchHandler.serverService(CommonLaunchHandler.java:103) ~[fmlloader-1.20.1-47.4.10.jar%2367!/:?]
+	at net.minecraftforge.fml.loading.targets.CommonServerLaunchHandler.lambda$makeService$0(CommonServerLaunchHandler.java:27) ~[fmlloader-1.20.1-47.4.10.jar%2367!/:?]
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30) ~[modlauncher-10.0.9.jar%2353!/:?]
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) ~[modlauncher-10.0.9.jar%2353!/:?]
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) ~[modlauncher-10.0.9.jar%2353!/:?]
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:108) ~[modlauncher-10.0.9.jar%2353!/:?]
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:78) ~[modlauncher-10.0.9.jar%2353!/:?]
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar%2353!/:?]
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar%2353!/:?]
+	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?]
+Caused by: java.lang.ClassNotFoundException: com.sun.jna.Platform
+	at jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[?:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:525) ~[?:?]
+	at cpw.mods.cl.ModuleClassLoader.loadClass(ModuleClassLoader.java:137) ~[securejarhandler-2.1.10.jar:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:525) ~[?:?]
+	... 22 more
+[16Jul2026 09:34:14.334] [main/INFO] [net.minecraft.server.Bootstrap/]: ModernFix reached bootstrap stage (20.41 s after launch)
+[16Jul2026 09:34:14.584] [main/WARN] [mixin/]: @Final field delegatesByName:Ljava/util/Map; in modernfix-modernfix.mixins.json:perf.forge_registry_alloc.ForgeRegistryMixin should be final
+[16Jul2026 09:34:14.584] [main/WARN] [mixin/]: @Final field delegatesByValue:Ljava/util/Map; in modernfix-modernfix.mixins.json:perf.forge_registry_alloc.ForgeRegistryMixin should be final
+[16Jul2026 09:34:14.714] [main/INFO] [ModernFix/]: Injecting BlockStateBase cache population hook into getNeighborPathNodeType from me.jellysquid.mods.lithium.mixin.ai.pathing.AbstractBlockStateMixin
+[16Jul2026 09:34:14.714] [main/INFO] [ModernFix/]: Injecting BlockStateBase cache population hook into getPathNodeType from me.jellysquid.mods.lithium.mixin.ai.pathing.AbstractBlockStateMixin
+[16Jul2026 09:34:14.714] [main/INFO] [ModernFix/]: Injecting BlockStateBase cache population hook into getAllFlags from me.jellysquid.mods.lithium.mixin.util.block_tracking.AbstractBlockStateMixin
+[16Jul2026 09:34:16.340] [main/INFO] [net.minecraft.server.Bootstrap/]: Vanilla bootstrap took 1995 milliseconds
+[16Jul2026 09:34:16.733] [main/INFO] [net.minecraftforge.coremod.CoreMod.placebo/COREMODLOG]: Patching IForgeItemStack#getEnchantmentLevel
+[16Jul2026 09:34:16.734] [main/INFO] [net.minecraftforge.coremod.CoreMod.placebo/COREMODLOG]: Patching IForgeItemStack#getEnchantmentLevel
+[16Jul2026 09:34:16.743] [main/INFO] [net.minecraftforge.coremod.CoreMod.placebo/COREMODLOG]: Patching IForgeItemStack#getEnchantmentLevel
+[16Jul2026 09:34:16.744] [main/INFO] [net.minecraftforge.coremod.CoreMod.placebo/COREMODLOG]: Patching IForgeItemStack#getEnchantmentLevel
+[16Jul2026 09:34:19.013] [main/WARN] [mixin/]: Mixin alexscaves.mixins.json:SwampHutPieceMixin has multiple constructors, (Lnet/minecraft/world/level/levelgen/structure/pieces/StructurePieceType;IIIIIILnet/minecraft/core/Direction;)V was selected
+
+[16Jul2026 09:34:19.133] [main/WARN] [mixin/]: Method overwrite conflict for m_47505_ in modernfix-modernfix.mixins.json:perf.remove_biome_temperature_cache.BiomeMixin, previously written by me.jellysquid.mods.lithium.mixin.world.temperature_cache.BiomeMixin. Skipping method.
+[16Jul2026 09:34:19.837] [modloading-worker-0/INFO] [me.wesley1808.servercore.common.ServerCore/]: [ServerCore] Loaded V1.5.2+1.20.1!
+[16Jul2026 09:34:20.003] [modloading-worker-0/INFO] [graveyard/]: Registered JSON trade offer adapter.
+[16Jul2026 09:34:20.528] [modloading-worker-0/INFO] [me.drex.antixray.common.AntiXray/]: Successfully initialized antixray for forge
+[16Jul2026 09:34:20.623] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 47.4.10, for MC 1.20.1 with MCP 20230612.114412
+[16Jul2026 09:34:20.623] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v47.4.10 Initialized
+[16Jul2026 09:34:23.473] [main/WARN] [net.minecraft.network.syncher.SynchedEntityData/]: defineId called for: class com.github.alexmodguy.alexscaves.server.entity.living.TremorzillaEntity from class com.github.alexmodguy.alexscaves.server.entity.living.LicowitchEntity
+[16Jul2026 09:34:24.835] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [radium] Starting version check at https://api.modrinth.com/updates/radium/forge_updates.json
+[16Jul2026 09:34:25.121] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [radium] Found status: AHEAD Current: 0.12.4+git.26c9d8e Target: null
+[16Jul2026 09:34:25.122] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [piglinproliferation] Starting version check at https://api.modrinth.com/updates/piglin-proliferation/forge_updates.json
+[16Jul2026 09:34:25.149] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [piglinproliferation] Found status: AHEAD Current: 1.20.1-1.2.8 Target: null
+[16Jul2026 09:34:25.149] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [clumps] Starting version check at https://updates.blamejared.com/get?n=clumps&gv=1.20.1
+[16Jul2026 09:34:25.499] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [clumps] Found status: BETA Current: 12.0.0.4 Target: 12.0.0.4
+[16Jul2026 09:34:25.499] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Starting version check at https://files.minecraftforge.net/net/minecraftforge/forge/promotions_slim.json
+[16Jul2026 09:34:25.599] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Found status: UP_TO_DATE Current: 47.4.10 Target: null
+[16Jul2026 09:34:25.599] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [simpletomb] Starting version check at https://raw.githubusercontent.com/Lothrazar/SimpleTomb/trunk/1.20/update.json
+[16Jul2026 09:34:25.632] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [simpletomb] Found status: BETA Current: 1.20.1-1.3.0 Target: 1.3.0
+[16Jul2026 09:34:25.634] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [aquamirae] Starting version check at https://raw.githubusercontent.com/ObscuriaLithium/modding/main/versions/aquamirae.json
+[16Jul2026 09:34:25.644] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [aquamirae] Found status: UP_TO_DATE Current: 6.4.0 Target: null
+[16Jul2026 09:34:26.060] [main/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[16Jul2026 09:34:26.185] [main/INFO] [ModernFix/]: Bypassed Mojang DFU
+[16Jul2026 09:34:26.559] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/workspaces/pala/servidor_minecraft/libraries/net/minecraft/server/1.20.1-20230612.114412/server-1.20.1-20230612.114412-srg.jar%23169!/assets/.mcassetsroot' uses unexpected schema
+[16Jul2026 09:34:26.560] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/workspaces/pala/servidor_minecraft/libraries/net/minecraft/server/1.20.1-20230612.114412/server-1.20.1-20230612.114412-srg.jar%23169!/data/.mcassetsroot' uses unexpected schema
+[16Jul2026 09:34:29.167] [Worker-Main-3/ERROR] [net.minecraft.tags.TagLoader/]: Couldn't load tag forge:vital_vein_tools as it is missing following references: #forge:vital_vein_hammer (from just_in_nether-1.1.9-forge-1.20.1.jar)
+[16Jul2026 09:34:29.654] [main/WARN] [net.minecraft.world.level.storage.loot.LootDataManager/]: Found loot table element validation problem in {loot_tables:just_in_nether:entities/pigmar}.pools[0].entries[1].functions[1]: Parameters [<parameter minecraft:tool>] are not provided in this context
+[16Jul2026 09:34:29.655] [main/WARN] [net.minecraft.world.level.storage.loot.LootDataManager/]: Found loot table element validation problem in {loot_tables:just_in_nether:entities/dullkin}.pools[0].entries[0].functions[1]: Parameters [<parameter minecraft:tool>] are not provided in this context
+[16Jul2026 09:34:29.655] [main/WARN] [net.minecraft.world.level.storage.loot.LootDataManager/]: Found loot table element validation problem in {loot_tables:just_in_nether:entities/pigmar}.pools[0].entries[0].functions[1]: Parameters [<parameter minecraft:tool>] are not provided in this context
+[16Jul2026 09:34:29.655] [main/WARN] [net.minecraft.world.level.storage.loot.LootDataManager/]: Found loot table element validation problem in {loot_tables:just_in_nether:entities/bullkindar}.pools[0].entries[0].functions[1]: Parameters [<parameter minecraft:tool>] are not provided in this context
+[16Jul2026 09:34:29.655] [main/WARN] [net.minecraft.world.level.storage.loot.LootDataManager/]: Found loot table element validation problem in {loot_tables:just_in_nether:entities/dullkin}.pools[0].entries[1].functions[1]: Parameters [<parameter minecraft:tool>] are not provided in this context
+[16Jul2026 09:34:29.655] [main/WARN] [net.minecraft.world.level.storage.loot.LootDataManager/]: Found loot table element validation problem in {loot_tables:just_in_nether:entities/bullkindar}.pools[0].entries[1].functions[1]: Parameters [<parameter minecraft:tool>] are not provided in this context
+[16Jul2026 09:34:29.717] [main/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Loaded 13 recipes
+[16Jul2026 09:34:29.794] [main/ERROR] [net.minecraft.server.ServerAdvancementManager/]: Parsing error loading custom advancement legendary_monsters:defeat_ambusher: Expected item to be an item, was unknown string 'legendary_monsters:ancient_dripstone_shard'
+[16Jul2026 09:34:29.823] [main/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 2098 advancements
+[16Jul2026 09:34:29.829] [main/INFO] [placebo/]: Registered 0 additional recipes.
+[16Jul2026 09:34:29.997] [main/INFO] [top.theillusivec4.curios.Curios/]: Loaded 14 curio slots
+[16Jul2026 09:34:29.999] [main/INFO] [top.theillusivec4.curios.Curios/]: Loaded 1 curio entities
+[16Jul2026 09:34:30.009] [main/INFO] [placebo/]: Registered 0 gear_sets.
+[16Jul2026 09:34:30.045] [main/WARN] [ModernFix/]: Initial datapack load took 3.453 s
+[16Jul2026 09:34:30.413] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Starting minecraft server version 1.20.1
+[16Jul2026 09:34:30.414] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Loading properties
+[16Jul2026 09:34:30.414] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Default game type: SURVIVAL
+[16Jul2026 09:34:30.414] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
+[16Jul2026 09:34:30.700] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Starting Minecraft server on *:25565
+[16Jul2026 09:34:30.752] [Server thread/INFO] [net.minecraft.server.network.ServerConnectionListener/]: Using epoll channel type
+[16Jul2026 09:34:30.856] [Server thread/WARN] [net.minecraft.server.dedicated.DedicatedServer/]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[16Jul2026 09:34:30.857] [Server thread/WARN] [net.minecraft.server.dedicated.DedicatedServer/]: The server will make no attempt to authenticate usernames. Beware.
+[16Jul2026 09:34:30.857] [Server thread/WARN] [net.minecraft.server.dedicated.DedicatedServer/]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[16Jul2026 09:34:30.858] [Server thread/WARN] [net.minecraft.server.dedicated.DedicatedServer/]: To change this, set "online-mode" to "true" in the server.properties file.
+[16Jul2026 09:34:31.023] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Preparing level "world"
+[16Jul2026 09:34:31.085] [Server thread/WARN] [mixin/]: @Redirect conflict. Skipping servercore.common.mixins.json:optimizations.ticking.chunk.cache.ServerChunkCacheMixin->@Redirect::servercore$noList(I)Ljava/util/ArrayList; with priority 900, already redirected by lithium.mixins.json:alloc.chunk_ticking.ServerChunkManagerMixin->@Redirect::redirectChunksListClone(I)Ljava/util/ArrayList; with priority 1000
+[16Jul2026 09:34:31.494] [Netty Epoll Server IO #1/INFO] [net.minecraftforge.server.ServerLifecycleHooks/SERVERHOOKS]: Disconnecting Player (server is still starting): literal{Server is still starting! Please wait before reconnecting.}
+[16Jul2026 09:34:35.138] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
+[16Jul2026 09:34:35.142] [Server thread/WARN] [mixin/]: Method overwrite conflict for removeIf in modernfix-modernfix.mixins.json:bugfix.paper_chunk_patches.SortedArraySetMixin, previously written by me.jellysquid.mods.lithium.mixin.world.chunk_tickets.SortedArraySetMixin. Skipping method.
+[16Jul2026 09:34:35.460] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[16Jul2026 09:34:35.655] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[16Jul2026 09:34:36.216] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 9%
+[16Jul2026 09:34:36.656] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 13%
+[16Jul2026 09:34:37.141] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 13%
+[16Jul2026 09:34:37.786] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Time elapsed: 2646 ms
+[16Jul2026 09:34:37.786] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Done (6.912s)! For help, type "help"
+[16Jul2026 09:34:37.951] [Server thread/INFO] [net.minecraftforge.server.permission.PermissionAPI/]: Successfully initialized permission handler forge:default_handler
+[16Jul2026 09:34:37.973] [Server thread/INFO] [com.example.Krysztok.manager.TpaMod/]: TPA MOD: Rejestrowanie komend.
+[16Jul2026 09:34:37.993] [Server thread/INFO] [com.github.alexthe666.iceandfire.IceAndFire/]: {iceandfire:fire_dragon_roost=true, iceandfire:fire_lily=true, iceandfire:spawn_dragon_skeleton_fire=true, iceandfire:lightning_dragon_roost=true, iceandfire:spawn_dragon_skeleton_lightning=true, iceandfire:ice_dragon_roost=true, iceandfire:ice_dragon_cave=true, iceandfire:lightning_dragon_cave=true, iceandfire:cyclops_cave=true, iceandfire:spawn_wandering_cyclops=true, iceandfire:spawn_sea_serpent=true, iceandfire:frost_lily=true, iceandfire:hydra_cave=true, iceandfire:lightning_lily=true, iceandfire:pixie_village=true, iceandfire:myrmex_hive_jungle=true, iceandfire:myrmex_hive_desert=true, iceandfire:silver_ore=true, iceandfire:siren_island=true, iceandfire:spawn_dragon_skeleton_ice=true, iceandfire:spawn_stymphalian_bird=true, iceandfire:fire_dragon_cave=true, iceandfire:sapphire_ore=true, iceandfire:spawn_hippocampus=true, iceandfire:spawn_death_worm=true}
+[16Jul2026 09:34:37.993] [Server thread/INFO] [com.github.alexthe666.iceandfire.IceAndFire/]: {TROLL_S=true, HIPPOGRYPH=true, AMPHITHERE=true, COCKATRICE=true, TROLL_M=true, DREAD_LICH=true, TROLL_F=true}
+[16Jul2026 09:34:37.995] [Server thread/WARN] [ModernFix/]: Dedicated server took 44.074 seconds to load
+[16Jul2026 09:34:43.081] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: bacalao_1[/100.70.0.33:50865] logged in with entity id 81 at (-887.2590678993931, 30.0, -2236.535990592159)
+[16Jul2026 09:34:43.106] [Server thread/INFO] [ModernFix/]: Using enhanced recipe sync for player bacalao_1
+[16Jul2026 09:34:43.119] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: bacalao_1 joined the game
+[16Jul2026 09:34:47.865] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: benjamon[/100.81.212.94:65280] logged in with entity id 269 at (-1171.300000011921, 59.0, -1302.300000011921)
+[16Jul2026 09:34:47.871] [Server thread/INFO] [ModernFix/]: Using enhanced recipe sync for player benjamon
+[16Jul2026 09:34:47.874] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: benjamon joined the game
+[16Jul2026 09:34:50.309] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: MiiMamii[/100.118.107.33:60809] logged in with entity id 386 at (-1699.7791598125143, 63.0, -2379.8712004133936)
+[16Jul2026 09:34:50.315] [Server thread/INFO] [ModernFix/]: Using enhanced recipe sync for player MiiMamii
+[16Jul2026 09:34:50.318] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: MiiMamii joined the game
+[16Jul2026 09:35:04.133] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: BatmanGordo1[/100.109.75.93:49781] logged in with entity id 773 at (-1440.699999988079, 72.0, -1663.0946167620777)
+[16Jul2026 09:35:04.139] [Server thread/INFO] [ModernFix/]: Using enhanced recipe sync for player BatmanGordo1
+[16Jul2026 09:35:04.141] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: BatmanGordo1 joined the game
+[16Jul2026 09:35:09.969] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: BatmanGordo1 was slain by Zombie
+[16Jul2026 09:35:09.980] [Server thread/INFO] [com.lothrazar.simpletomb.ModTomb/]: simpletomb.message.new_grave(-1441, 72, -1663) minecraft:overworld
+[16Jul2026 09:35:30.045] [Server thread/INFO] [com.lothrazar.simpletomb.ModTomb/]: 0 result 0 air
+[16Jul2026 09:35:30.045] [Server thread/INFO] [com.lothrazar.simpletomb.ModTomb/]: 0 result 1 gold_backpack
+[16Jul2026 09:35:30.046] [Server thread/INFO] [com.lothrazar.simpletomb.ModTomb/]: 0 result 1 iron_backpack
+[16Jul2026 09:35:36.668] [Server thread/INFO] [fastsuite/]: Constructed recipe list for minecraft:crafting in 2.682 ms. 2208/2240 recipes are parallelized.
+[16Jul2026 09:35:42.231] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Juandi3531[/100.123.37.118:50311] logged in with entity id 1553 at (-869.0361044065521, 30.5, -2239.4499746406336)
+[16Jul2026 09:35:42.236] [Server thread/INFO] [ModernFix/]: Using enhanced recipe sync for player Juandi3531
+[16Jul2026 09:35:42.238] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Juandi3531 joined the game
+[16Jul2026 09:36:11.984] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Pradolf56[/100.93.166.8:62031] logged in with entity id 1790 at (-875.5834504218204, 30.0, -2217.5284885368537)
+[16Jul2026 09:36:11.989] [Server thread/INFO] [ModernFix/]: Using enhanced recipe sync for player Pradolf56
+[16Jul2026 09:36:11.990] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Pradolf56 joined the game
+[16Jul2026 09:36:27.324] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Juandi3531 lost connection: Timed out
+[16Jul2026 09:36:27.324] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Juandi3531 left the game
+[16Jul2026 09:36:35.630] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Juandi3531[/100.123.37.118:50437] logged in with entity id 2206 at (-920.8822601354735, 124.38871455192566, -2238.490530323384)
+[16Jul2026 09:36:35.635] [Server thread/INFO] [ModernFix/]: Using enhanced recipe sync for player Juandi3531
+[16Jul2026 09:36:35.636] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Juandi3531 joined the game
+[16Jul2026 09:36:56.301] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Fire Dragon (vehicle of Juandi3531) moved too quickly! -4.919468556608081,0.0,-9.858721587663695
+[16Jul2026 09:36:58.192] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: la keke (vehicle of BatmanGordo1) moved too quickly! -0.03867271355397861,5.618678313010079,-8.96374520459176
+[16Jul2026 09:36:58.192] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: la keke (vehicle of BatmanGordo1) moved too quickly! -0.04341517710849985,5.979651601163582,-10.0629759292774
+[16Jul2026 09:36:58.193] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: la keke (vehicle of BatmanGordo1) moved too quickly! -0.0482297031651342,6.2980300413149735,-11.178909642925191
+[16Jul2026 09:36:58.193] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: la keke (vehicle of BatmanGordo1) moved too quickly! -0.053107788348825125,6.57883982552849,-12.309575392837814
+[16Jul2026 09:36:58.193] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: la keke (vehicle of BatmanGordo1) moved too quickly! -0.05804193268227209,6.826514055204825,-13.453234798736048
+[16Jul2026 09:36:58.193] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: la keke (vehicle of BatmanGordo1) moved too quickly! -0.06302552118586391,7.044962725779342,-14.60835460921362
+[16Jul2026 09:36:58.194] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: la keke (vehicle of BatmanGordo1) moved too quickly! -0.0680527194476781,7.237634453226065,-15.773582496530253
+[16Jul2026 09:36:58.194] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: la keke (vehicle of BatmanGordo1) moved too quickly! -0.07311838151622396,7.407570916834075,-16.9477257076187
+[16Jul2026 09:36:58.194] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: la keke (vehicle of BatmanGordo1) moved too quickly! -0.07821796866210207,7.5574548777363475,-18.129732234274343
+[16Jul2026 09:36:58.195] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: la keke (vehicle of BatmanGordo1) moved too quickly! -0.08334747772642004,7.68965253125215,-19.318674205259867
+[16Jul2026 09:36:58.195] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: la keke (vehicle of BatmanGordo1) moved too quickly! -0.08850337792273422,7.8062508616530835,-20.51373323814414
+[16Jul2026 09:36:58.195] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: la keke (vehicle of BatmanGordo1) moved too quickly! -0.09368255509730261,7.909090589066707,-21.714187519623465
+[16Jul2026 09:36:58.419] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Fire Dragon (vehicle of Juandi3531) moved too quickly! -4.645336226573363,0.0,-9.991036998279924
+[16Jul2026 09:36:58.544] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: la keke (vehicle of BatmanGordo1) moved too quickly! -0.06487030905032043,2.7903836822493986,-15.035948301248482
+[16Jul2026 09:36:58.545] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: la keke (vehicle of BatmanGordo1) moved too quickly! -0.07008812424010102,2.8703851743579207,-16.245358285356815
+[16Jul2026 09:36:58.545] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: la keke (vehicle of BatmanGordo1) moved too quickly! -0.07532191043901548,2.9409464903976357,-17.45847010581565
+[16Jul2026 09:36:58.545] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: la keke (vehicle of BatmanGordo1) moved too quickly! -0.08056978306785822,3.0031815711446654,-18.674846945935315
+[16Jul2026 09:36:58.545] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: la keke (vehicle of BatmanGordo1) moved too quickly! -0.08583007992820058,3.058072912363542,-19.894103533396446
+[16Jul2026 09:36:58.545] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: la keke (vehicle of BatmanGordo1) moved too quickly! -0.09110133496051276,3.106487075318597,-21.115900058012357
+[16Jul2026 09:36:58.546] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: la keke (vehicle of BatmanGordo1) moved too quickly! -0.0963822551004796,3.1491883670449567,-22.339936807199138
+[16Jul2026 09:36:58.577] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: la keke (vehicle of BatmanGordo1) moved too quickly! -0.1016716998656193,3.186850906347601,-23.565949434456797
+[16Jul2026 09:36:58.578] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: la keke (vehicle of BatmanGordo1) moved too quickly! -0.10696866335001687,3.22006926601253,-24.79370478617375
+[16Jul2026 09:36:58.578] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: la keke (vehicle of BatmanGordo1) moved too quickly! -0.11227225834477395,3.2493678592369974,-26.02299722086309
+[16Jul2026 09:36:58.579] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: la keke (vehicle of BatmanGordo1) moved too quickly! -0.11758170233156306,3.2752092184609864,-27.25364536273446
+[16Jul2026 09:36:58.579] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: la keke (vehicle of BatmanGordo1) moved too quickly! -0.12289630512964322,3.298001297296537,-28.485489238340506
+[16Jul2026 09:36:58.580] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: la keke (vehicle of BatmanGordo1) moved too quickly! -0.1282154579989765,3.3181039108294925,-29.71838775110018
+[16Jul2026 09:36:58.580] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: la keke (vehicle of BatmanGordo1) moved too quickly! -0.13353862403141648,3.3358344159655644,-30.952216453829806
+[16Jul2026 09:36:58.581] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: la keke (vehicle of BatmanGordo1) moved too quickly! -0.1388653296735356,3.3514727214955826,-32.18686558411264
+[16Jul2026 09:36:58.581] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: la keke (vehicle of BatmanGordo1) moved too quickly! -0.14419515725148813,3.365265706973048,-33.42223833149728
+[16Jul2026 09:36:58.581] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: la keke (vehicle of BatmanGordo1) moved too quickly! -0.14952773837671884,3.377431120164175,-34.65824930916597
+[16Jul2026 09:36:58.582] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: la keke (vehicle of BatmanGordo1) moved too quickly! -0.15486274813065393,3.388161014598751,-35.89482320594516
+[16Jul2026 09:36:58.582] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: la keke (vehicle of BatmanGordo1) moved too quickly! -0.16019989993515082,3.3976247814900518,-37.13189359737953
+[16Jul2026 09:36:58.583] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: la keke (vehicle of BatmanGordo1) moved too quickly! -0.16553894102821687,3.40597182388818,-38.36940189710003
+[16Jul2026 09:36:58.638] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: la keke (vehicle of BatmanGordo1) moved too quickly! -0.1706991243788707,3.5200384588377176,-39.56545369984178
+[16Jul2026 09:36:58.639] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: la keke (vehicle of BatmanGordo1) moved too quickly! -0.17588207929566124,3.620645230863218,-40.766783604335615
+[16Jul2026 09:36:58.680] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: la keke (vehicle of BatmanGordo1) moved too quickly! -0.1810851187337903,3.7093804037897087,-41.97276879457422
+[16Jul2026 09:37:01.989] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Fire Dragon (vehicle of Juandi3531) moved too quickly! 41.9132608235991,0.0,95.147563215216
+[16Jul2026 09:37:02.035] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Fire Dragon (vehicle of Juandi3531) moved too quickly! 41.81902733563243,0.0,94.58839447045193
+[16Jul2026 09:37:02.067] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Fire Dragon (vehicle of Juandi3531) moved too quickly! 41.735913399245874,0.0,94.09520763757018
+[16Jul2026 09:37:02.249] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Fire Dragon (vehicle of Juandi3531) moved too quickly! 41.66260690735294,0.0,93.66021685096848
+[16Jul2026 09:37:02.250] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Fire Dragon (vehicle of Juandi3531) moved too quickly! 41.6601757653566,0.0,93.32887211242223
+[16Jul2026 09:37:02.325] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Fire Dragon (vehicle of Juandi3531) moved too quickly! 41.72240094920994,0.0,93.08894318826106
+[16Jul2026 09:37:02.329] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Fire Dragon (vehicle of Juandi3531) moved too quickly! 41.83950874522179,0.0,92.92964301238726
+[16Jul2026 09:37:02.495] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Fire Dragon (vehicle of Juandi3531) moved too quickly! 42.00502300515768,0.0,92.84145739250334
+[16Jul2026 09:37:02.495] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Fire Dragon (vehicle of Juandi3531) moved too quickly! 42.15100658242113,0.0,92.7636776757654
+[16Jul2026 09:37:02.496] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Fire Dragon (vehicle of Juandi3531) moved too quickly! 42.27976409756752,0.0,92.69507596560288
+[16Jul2026 09:37:02.498] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Fire Dragon (vehicle of Juandi3531) moved too quickly! 42.39332822592655,0.0,92.63456925723949
+[16Jul2026 09:37:02.763] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Fire Dragon (vehicle of Juandi3531) moved too quickly! 10.202889900276432,0.0,32.45397320717075
+[16Jul2026 09:37:02.829] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Fire Dragon (vehicle of Juandi3531) moved too quickly! 10.303053461489071,0.0,32.40060629039408
+[16Jul2026 09:37:02.829] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Fire Dragon (vehicle of Juandi3531) moved too quickly! 10.391397722478587,0.0,32.353536669796995
+[16Jul2026 09:37:02.880] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Fire Dragon (vehicle of Juandi3531) moved too quickly! 10.469317360671312,0.0,32.312021264430314
+[16Jul2026 09:37:02.928] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Fire Dragon (vehicle of Juandi3531) moved too quickly! 10.53804248155734,0.0,32.27540467689687
+[16Jul2026 09:37:03.013] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Fire Dragon (vehicle of Juandi3531) moved too quickly! 10.514815037329527,0.0,32.103801355866835
+[16Jul2026 09:37:03.014] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Fire Dragon (vehicle of Juandi3531) moved too quickly! 10.411583197379969,0.0,31.812484907788075
+[16Jul2026 09:37:03.067] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Fire Dragon (vehicle of Juandi3531) moved too quickly! 10.237787480403995,0.0,31.41558148165177
+[16Jul2026 09:37:03.214] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Fire Dragon (vehicle of Juandi3531) moved too quickly! 10.001754423890588,0.0,30.92555034086945
+[16Jul2026 09:38:05.907] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Juandi3531 lost connection: Timed out
+[16Jul2026 09:38:05.907] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Juandi3531 left the game
+[16Jul2026 09:38:12.922] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Juandi3531[/100.123.37.118:50949] logged in with entity id 5016 at (-1367.853027500284, 68.65950465202332, -2928.2082993004956)
+[16Jul2026 09:38:12.926] [Server thread/INFO] [ModernFix/]: Using enhanced recipe sync for player Juandi3531
+[16Jul2026 09:38:12.927] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Juandi3531 joined the game
+[16Jul2026 09:38:21.937] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <BatmanGordo1> zz
+[16Jul2026 09:38:33.724] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <bacalao_1> zzz
+[16Jul2026 09:38:52.159] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <BatmanGordo1> zz
+[16Jul2026 09:38:53.354] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Juandi3531 was slain by Zombie
+[16Jul2026 09:38:53.359] [Server thread/INFO] [com.lothrazar.simpletomb.ModTomb/]: simpletomb.message.new_grave(-1358, 66, -2923) minecraft:overworld
+[16Jul2026 09:38:55.128] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <benjamon> zzzzzzzz
+[16Jul2026 09:39:11.168] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Juandi3531 lost connection: Disconnected
+[16Jul2026 09:39:11.168] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Juandi3531 left the game
+[16Jul2026 09:39:17.279] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Juandi3531[/100.123.37.118:51292] logged in with entity id 5624 at (-856.5, 30.0, -2229.5)
+[16Jul2026 09:39:17.283] [Server thread/INFO] [ModernFix/]: Using enhanced recipe sync for player Juandi3531
+[16Jul2026 09:39:17.284] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Juandi3531 joined the game
+[16Jul2026 09:39:36.756] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: BatmanGordo1 was kicked for floating too long!
+[16Jul2026 09:39:36.807] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: BatmanGordo1 lost connection: Flying is not enabled on this server
+[16Jul2026 09:39:36.807] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: BatmanGordo1 left the game
+[16Jul2026 09:39:46.324] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: BatmanGordo1[/100.109.75.93:49844] logged in with entity id 6069 at (-1340.174477044357, 105.51780636638412, -2863.700540841501)
+[16Jul2026 09:39:46.327] [Server thread/INFO] [ModernFix/]: Using enhanced recipe sync for player BatmanGordo1
+[16Jul2026 09:39:46.329] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: BatmanGordo1 joined the game
+[16Jul2026 09:39:52.183] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: BatmanGordo1 fell from a high place
+[16Jul2026 09:39:52.188] [Server thread/INFO] [com.lothrazar.simpletomb.ModTomb/]: simpletomb.message.new_grave(-1339, 72, -2864) minecraft:overworld
+[16Jul2026 09:40:02.628] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: BatmanGordo1 fell from a high place
+[16Jul2026 09:40:06.130] [Server thread/INFO] [com.lothrazar.simpletomb.ModTomb/]: 0 result 0 air
+[16Jul2026 09:40:06.131] [Server thread/INFO] [com.lothrazar.simpletomb.ModTomb/]: 0 result 1 copper_backpack
+[16Jul2026 09:40:06.131] [Server thread/INFO] [com.lothrazar.simpletomb.ModTomb/]: 0 result 1 copper_backpack
+[16Jul2026 09:40:06.131] [Server thread/INFO] [com.lothrazar.simpletomb.ModTomb/]: 0 result 1 copper_backpack
+[16Jul2026 09:40:06.131] [Server thread/INFO] [com.lothrazar.simpletomb.ModTomb/]: 0 result 1 backpack
+[16Jul2026 09:40:06.132] [Server thread/INFO] [com.lothrazar.simpletomb.ModTomb/]: 0 result 1 iron_backpack
+[16Jul2026 09:40:06.132] [Server thread/INFO] [com.lothrazar.simpletomb.ModTomb/]: 0 result 1 gold_backpack
+[16Jul2026 09:40:20.278] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: BatmanGordo1 fell from a high place
+[16Jul2026 09:40:20.281] [Server thread/INFO] [com.lothrazar.simpletomb.ModTomb/]: simpletomb.message.new_grave(-1320, 71, -2791) minecraft:overworld
+[16Jul2026 09:40:32.508] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Juandi3531 lost connection: Timed out
+[16Jul2026 09:40:32.509] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Juandi3531 left the game
+[16Jul2026 09:40:37.222] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Juandi3531[/100.123.37.118:51490] logged in with entity id 6519 at (-1402.4011886815674, 65.24918707874468, -2930.670371418842)
+[16Jul2026 09:40:37.226] [Server thread/INFO] [ModernFix/]: Using enhanced recipe sync for player Juandi3531
+[16Jul2026 09:40:37.227] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Juandi3531 joined the game
+[16Jul2026 09:40:40.091] [Server thread/INFO] [fastsuite/]: Constructed recipe list for minecraft:smelting in 88.71 μs. 126/126 recipes are parallelized.
+[16Jul2026 09:40:41.803] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Juandi3531 was slain by Zombie
+[16Jul2026 09:40:41.806] [Server thread/INFO] [com.lothrazar.simpletomb.ModTomb/]: simpletomb.message.new_grave(-1403, 64, -2931) minecraft:overworld
+[16Jul2026 09:41:14.693] [Server thread/INFO] [com.lothrazar.simpletomb.ModTomb/]: 0 result 0 air
+[16Jul2026 09:41:14.693] [Server thread/INFO] [com.lothrazar.simpletomb.ModTomb/]: 0 result 1 iron_backpack
+[16Jul2026 09:41:14.694] [Server thread/INFO] [com.lothrazar.simpletomb.ModTomb/]: 0 result 1 gold_backpack
+[16Jul2026 09:42:05.126] [Server thread/INFO] [com.lothrazar.simpletomb.ModTomb/]: 0 result 0 air
+[16Jul2026 09:42:05.126] [Server thread/INFO] [com.lothrazar.simpletomb.ModTomb/]: 0 result 1 copper_backpack
+[16Jul2026 09:42:05.126] [Server thread/INFO] [com.lothrazar.simpletomb.ModTomb/]: 0 result 1 copper_backpack
+[16Jul2026 09:42:05.127] [Server thread/INFO] [com.lothrazar.simpletomb.ModTomb/]: 0 result 1 copper_backpack
+[16Jul2026 09:42:05.127] [Server thread/INFO] [com.lothrazar.simpletomb.ModTomb/]: 0 result 1 backpack
+[16Jul2026 09:42:05.127] [Server thread/INFO] [com.lothrazar.simpletomb.ModTomb/]: 0 result 1 iron_backpack
+[16Jul2026 09:42:05.127] [Server thread/INFO] [com.lothrazar.simpletomb.ModTomb/]: 0 result 1 gold_backpack
+[16Jul2026 09:42:09.340] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: bacalao_1 has made the advancement [The Song of the Dragons]
+[16Jul2026 09:42:18.970] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: bacalao_1 has made the advancement [An Ear-Shattering Roar]
+[16Jul2026 09:43:28.310] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: MiiMamii drowned
+[16Jul2026 09:43:28.311] [Server thread/INFO] [com.lothrazar.simpletomb.ModTomb/]: simpletomb.message.new_grave(-1564, 56, -2532) minecraft:overworld
+[16Jul2026 09:44:48.244] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: MiiMamii has made the advancement [Rotten to the Core]
+[16Jul2026 09:49:18.660] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Juandi3531> xaero-waypoint:dragones:D:-1412:12:-2286:14:false:0:Internal-overworld-waypoints
+[16Jul2026 09:49:51.337] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Fire Dragon (vehicle of Juandi3531) moved too quickly! 0.2687652608874487,0.0,10.92383008388515
+[16Jul2026 09:50:07.714] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: MiiMamii moved too quickly! -8.819812196359635,-0.22768848754498094,4.928486808134494
+[16Jul2026 09:50:10.418] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Fire Dragon (vehicle of Juandi3531) moved too quickly! 0.823174303486212,0.0,10.975850267933765
+[16Jul2026 09:50:10.419] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Fire Dragon (vehicle of Juandi3531) moved too quickly! 0.8924474001646558,0.0,12.350067025573026
+[16Jul2026 09:50:10.419] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Fire Dragon (vehicle of Juandi3531) moved too quickly! 0.9543880376293146,0.0,13.724716150656604
+[16Jul2026 09:50:10.419] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Fire Dragon (vehicle of Juandi3531) moved too quickly! 1.0098614460673616,0.0,15.099746623826377
+[16Jul2026 09:50:10.419] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Fire Dragon (vehicle of Juandi3531) moved too quickly! 1.059630758503772,0.0,16.47511344600798
+[16Jul2026 09:50:11.072] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Fire Dragon (vehicle of Juandi3531) moved too quickly! -0.5403973567206322,0.0,-23.387477047958328
+[16Jul2026 09:50:11.072] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Fire Dragon (vehicle of Juandi3531) moved too quickly! -0.5403973567206322,0.0,-23.387477047958328
+[16Jul2026 09:50:11.073] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Fire Dragon (vehicle of Juandi3531) moved too quickly! -0.5403973567206322,0.0,-23.387477047958328
+[16Jul2026 09:50:11.073] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Fire Dragon (vehicle of Juandi3531) moved too quickly! -0.5403973567206322,0.0,-23.387477047958328
+[16Jul2026 09:50:11.073] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Fire Dragon (vehicle of Juandi3531) moved too quickly! -0.5403973567206322,0.0,-23.387477047958328
+[16Jul2026 09:50:11.075] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Fire Dragon (vehicle of Juandi3531) moved too quickly! -0.5737769175400445,0.0,-22.01300421033102
+[16Jul2026 09:50:11.122] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Fire Dragon (vehicle of Juandi3531) moved too quickly! -0.6332543546334364,0.0,-20.640925477969176
+[16Jul2026 09:50:11.163] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Fire Dragon (vehicle of Juandi3531) moved too quickly! -0.7161789709721234,0.0,-19.27103955913026
+[16Jul2026 09:50:11.234] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Fire Dragon (vehicle of Juandi3531) moved too quickly! -0.8231151705156208,0.0,-17.903759276404344
+[16Jul2026 09:50:52.214] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: MiiMamii drowned
+[16Jul2026 09:50:52.217] [Server thread/INFO] [com.lothrazar.simpletomb.ModTomb/]: simpletomb.message.new_grave(-1549, 57, -2553) minecraft:overworld
+[16Jul2026 09:51:12.670] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <MiiMamii> zzzzzzzzzzzzzzzz
+[16Jul2026 09:51:22.964] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <MiiMamii> zzqzqzqz
+[16Jul2026 09:51:29.277] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <benjamon> ZZZ
+[16Jul2026 09:51:33.461] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Juandi3531 lost connection: Disconnected
+[16Jul2026 09:51:33.462] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Juandi3531 left the game
+[16Jul2026 09:51:38.507] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: BatmanGordo1 lost connection: Disconnected
+[16Jul2026 09:51:38.508] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: BatmanGordo1 left the game
+[16Jul2026 09:51:50.423] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: BatmanGordo1[/100.109.75.93:58639] logged in with entity id 15833 at (-1513.163123986257, 63.0, -3043.7483859407785)
+[16Jul2026 09:51:50.427] [Server thread/INFO] [ModernFix/]: Using enhanced recipe sync for player BatmanGordo1
+[16Jul2026 09:51:50.428] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: BatmanGordo1 joined the game
+[16Jul2026 09:51:51.669] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Juandi3531[/100.123.37.118:51596] logged in with entity id 15873 at (-1413.5076145231565, 49.0, -2290.6718963480084)
+[16Jul2026 09:51:51.673] [Server thread/INFO] [ModernFix/]: Using enhanced recipe sync for player Juandi3531
+[16Jul2026 09:51:51.674] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Juandi3531 joined the game
+[16Jul2026 09:53:00.618] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: BatmanGordo1 has made the advancement [Splintering II]
+[16Jul2026 09:53:28.570] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: BatmanGordo1 has made the advancement [R.I.P. Yondu]
+[16Jul2026 09:57:34.597] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: BatmanGordo1 has made the advancement [A Flaming Sword]
+[16Jul2026 09:58:31.027] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 56531ms or 1130 ticks behind
+[16Jul2026 09:58:31.088] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: bacalao_1 lost connection: Disconnected
+[16Jul2026 09:58:31.088] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: bacalao_1 left the game
+[16Jul2026 09:58:31.177] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: benjamon lost connection: Disconnected
+[16Jul2026 09:58:31.182] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: benjamon left the game
+[16Jul2026 09:58:31.215] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: MiiMamii lost connection: Disconnected
+[16Jul2026 09:58:31.216] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: MiiMamii left the game
+[16Jul2026 09:58:31.260] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Pradolf56 lost connection: Disconnected
+[16Jul2026 09:58:31.261] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Pradolf56 left the game
+[16Jul2026 09:58:31.294] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: BatmanGordo1 lost connection: Disconnected
+[16Jul2026 09:58:31.297] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: BatmanGordo1 left the game
+[16Jul2026 09:58:31.355] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Juandi3531 lost connection: Disconnected
+[16Jul2026 09:58:31.357] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Juandi3531 left the game
+[16Jul2026 09:58:32.473] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Juandi3531[/100.123.37.118:51638] logged in with entity id 22511 at (-1464.1575915504184, 4.0, -2192.659741497478)
+[16Jul2026 09:58:32.478] [Server thread/INFO] [ModernFix/]: Using enhanced recipe sync for player Juandi3531
+[16Jul2026 09:58:32.480] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Juandi3531 joined the game
+[16Jul2026 09:58:32.567] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: benjamon[/100.81.212.94:65404] logged in with entity id 22512 at (-1359.193214996176, 70.0, -2869.7191642471334)
+[16Jul2026 09:58:32.578] [Server thread/INFO] [ModernFix/]: Using enhanced recipe sync for player benjamon
+[16Jul2026 09:58:32.583] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: benjamon joined the game
+[16Jul2026 09:58:33.053] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: BatmanGordo1[/100.109.75.93:58839] logged in with entity id 22548 at (-1415.535846638554, 4.0, -2210.75800302266)
+[16Jul2026 09:58:33.066] [Server thread/INFO] [ModernFix/]: Using enhanced recipe sync for player BatmanGordo1
+[16Jul2026 09:58:33.068] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: BatmanGordo1 joined the game
+[16Jul2026 09:58:33.495] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: MiiMamii[/100.118.107.33:54576] logged in with entity id 22569 at (-1638.8216014966165, 63.796735600668704, -2364.4543841959185)
+[16Jul2026 09:58:33.504] [Server thread/INFO] [ModernFix/]: Using enhanced recipe sync for player MiiMamii
+[16Jul2026 09:58:33.512] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: MiiMamii joined the game
+[16Jul2026 09:58:35.198] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Pradolf56[/100.93.166.8:55372] logged in with entity id 22751 at (-1419.2547068089434, 4.0, -2209.529391976946)
+[16Jul2026 09:58:35.225] [Server thread/INFO] [ModernFix/]: Using enhanced recipe sync for player Pradolf56
+[16Jul2026 09:58:35.239] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Pradolf56 joined the game
+[16Jul2026 09:58:36.716] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: bacalao_1[/100.70.0.33:50134] logged in with entity id 22870 at (-1419.488814666071, 4.0, -2206.5572110654925)
+[16Jul2026 09:58:36.729] [Server thread/INFO] [ModernFix/]: Using enhanced recipe sync for player bacalao_1
+[16Jul2026 09:58:36.738] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: bacalao_1 joined the game
+[16Jul2026 09:59:32.755] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: bacalao_1 was slain by Fire Dragon
+[16Jul2026 09:59:32.758] [Server thread/INFO] [com.lothrazar.simpletomb.ModTomb/]: simpletomb.message.new_grave(-1425, 0, -2185) minecraft:overworld
+[16Jul2026 09:59:43.205] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Juandi3531 was incinerated by Fire Dragon
+[16Jul2026 09:59:43.206] [Server thread/INFO] [com.lothrazar.simpletomb.ModTomb/]: simpletomb.message.new_grave(-1422, 4, -2213) minecraft:overworld
+[16Jul2026 09:59:44.937] [Server thread/INFO] [com.lothrazar.simpletomb.ModTomb/]: 0 result 0 air
+[16Jul2026 09:59:44.938] [Server thread/INFO] [com.lothrazar.simpletomb.ModTomb/]: 0 result 1 copper_backpack
+[16Jul2026 09:59:48.303] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Pradolf56 was slain by Fire Dragon
+[16Jul2026 09:59:48.304] [Server thread/INFO] [com.lothrazar.simpletomb.ModTomb/]: simpletomb.message.new_grave(-1424, 0, -2184) minecraft:overworld
+[16Jul2026 09:59:53.529] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: bacalao_1 moved too quickly! -8.739603624807842,1.1767592750642373,5.111684693507868
+[16Jul2026 09:59:54.311] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: BatmanGordo1 lost connection: Disconnected
+[16Jul2026 09:59:54.312] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: BatmanGordo1 left the game
+[16Jul2026 09:59:57.559] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: bacalao_1 was kicked for floating too long!
+[16Jul2026 09:59:57.611] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: bacalao_1 lost connection: Flying is not enabled on this server
+[16Jul2026 09:59:57.611] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: bacalao_1 left the game
+[16Jul2026 09:59:57.872] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: BatmanGordo1[/100.109.75.93:58879] logged in with entity id 24570 at (-1406.1975573626353, 2.0, -2192.9515813851026)
+[16Jul2026 09:59:57.875] [Server thread/INFO] [ModernFix/]: Using enhanced recipe sync for player BatmanGordo1
+[16Jul2026 09:59:57.877] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: BatmanGordo1 joined the game
+[16Jul2026 09:59:58.673] [Server thread/INFO] [com.lothrazar.simpletomb.ModTomb/]: 0 result 0 air
+[16Jul2026 09:59:58.673] [Server thread/INFO] [com.lothrazar.simpletomb.ModTomb/]: 0 result 1 copper_backpack
+[16Jul2026 09:59:58.673] [Server thread/INFO] [com.lothrazar.simpletomb.ModTomb/]: 0 result 1 iron_backpack
+[16Jul2026 09:59:58.673] [Server thread/INFO] [com.lothrazar.simpletomb.ModTomb/]: 0 result 1 copper_backpack
+[16Jul2026 09:59:58.674] [Server thread/INFO] [com.lothrazar.simpletomb.ModTomb/]: 0 result 1 copper_backpack
+[16Jul2026 09:59:58.674] [Server thread/INFO] [com.lothrazar.simpletomb.ModTomb/]: 0 result 1 backpack
+[16Jul2026 09:59:58.674] [Server thread/INFO] [com.lothrazar.simpletomb.ModTomb/]: 0 result 1 gold_backpack
+[16Jul2026 10:00:04.227] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: bacalao_1[/100.70.0.33:50311] logged in with entity id 24666 at (-1449.309629808793, 1.2522033402537238, -2169.309290237559)
+[16Jul2026 10:00:04.231] [Server thread/INFO] [ModernFix/]: Using enhanced recipe sync for player bacalao_1
+[16Jul2026 10:00:04.233] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: bacalao_1 joined the game
+[16Jul2026 10:00:05.353] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Pradolf56 was slain by Fire Dragon
+[16Jul2026 10:00:07.352] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: BatmanGordo1 was slain by Fire Dragon
+[16Jul2026 10:00:07.355] [Server thread/INFO] [com.lothrazar.simpletomb.ModTomb/]: simpletomb.message.new_grave(-1412, 6, -2180) minecraft:overworld
+[16Jul2026 10:00:16.361] [Server thread/INFO] [com.lothrazar.simpletomb.ModTomb/]: 0 result 0 air
+[16Jul2026 10:00:16.362] [Server thread/INFO] [com.lothrazar.simpletomb.ModTomb/]: 0 result 0 air
+[16Jul2026 10:00:16.362] [Server thread/INFO] [com.lothrazar.simpletomb.ModTomb/]: 0 result 0 air
+[16Jul2026 10:00:16.362] [Server thread/INFO] [com.lothrazar.simpletomb.ModTomb/]: 0 result 1 iron_backpack
+[16Jul2026 10:00:16.362] [Server thread/INFO] [com.lothrazar.simpletomb.ModTomb/]: 0 result 1 iron_backpack
+[16Jul2026 10:00:24.352] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Juandi3531 was slain by Fire Dragon
+[16Jul2026 10:00:24.353] [Server thread/INFO] [com.lothrazar.simpletomb.ModTomb/]: simpletomb.message.new_grave(-1421, 4, -2213) minecraft:overworld
+[16Jul2026 10:00:25.043] [Server thread/INFO] [com.lothrazar.simpletomb.ModTomb/]: 0 result 0 air
+[16Jul2026 10:00:25.043] [Server thread/INFO] [com.lothrazar.simpletomb.ModTomb/]: 0 result 1 copper_backpack
+[16Jul2026 10:00:25.044] [Server thread/INFO] [com.lothrazar.simpletomb.ModTomb/]: 0 result 1 gold_backpack
+[16Jul2026 10:00:27.353] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: bacalao_1 was slain by Fire Dragon
+[16Jul2026 10:00:27.356] [Server thread/INFO] [com.lothrazar.simpletomb.ModTomb/]: simpletomb.message.new_grave(-1409, -1, -2218) minecraft:overworld
+[16Jul2026 10:00:54.603] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: BatmanGordo1 was slain by Fire Dragon
+[16Jul2026 10:00:54.605] [Server thread/INFO] [com.lothrazar.simpletomb.ModTomb/]: simpletomb.message.new_grave(-1429, 0, -2177) minecraft:overworld
+[16Jul2026 10:01:03.088] [Server thread/INFO] [com.lothrazar.simpletomb.ModTomb/]: 0 result 0 air
+[16Jul2026 10:01:03.089] [Server thread/INFO] [com.lothrazar.simpletomb.ModTomb/]: 0 result 1 gold_backpack
+[16Jul2026 10:01:03.089] [Server thread/INFO] [com.lothrazar.simpletomb.ModTomb/]: 0 result 1 copper_backpack
+[16Jul2026 10:01:19.369] [Server thread/INFO] [com.lothrazar.simpletomb.ModTomb/]: 0 result 0 air
+[16Jul2026 10:01:19.369] [Server thread/INFO] [com.lothrazar.simpletomb.ModTomb/]: 0 result 1 copper_backpack
+[16Jul2026 10:01:30.772] [Server thread/INFO] [com.lothrazar.simpletomb.ModTomb/]: 0 result 0 air
+[16Jul2026 10:01:30.773] [Server thread/INFO] [com.lothrazar.simpletomb.ModTomb/]: 0 result 1 copper_backpack
+[16Jul2026 10:01:30.773] [Server thread/INFO] [com.lothrazar.simpletomb.ModTomb/]: 0 result 1 iron_backpack
+[16Jul2026 10:01:30.773] [Server thread/INFO] [com.lothrazar.simpletomb.ModTomb/]: 0 result 1 copper_backpack
+[16Jul2026 10:01:30.773] [Server thread/INFO] [com.lothrazar.simpletomb.ModTomb/]: 0 result 1 copper_backpack
+[16Jul2026 10:01:30.773] [Server thread/INFO] [com.lothrazar.simpletomb.ModTomb/]: 0 result 1 backpack
+[16Jul2026 10:01:30.774] [Server thread/INFO] [com.lothrazar.simpletomb.ModTomb/]: 0 result 1 gold_backpack
+[16Jul2026 10:02:44.224] [Server thread/WARN] [net.minecraft.server.level.ServerPlayerGameMode/]: Mismatch in destroy block pos: BlockPos{x=-1416, y=45, z=-2160} BlockPos{x=-1417, y=44, z=-2160}
+[16Jul2026 10:02:45.709] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: MiiMamii drowned
+[16Jul2026 10:02:45.712] [Server thread/INFO] [com.lothrazar.simpletomb.ModTomb/]: simpletomb.message.new_grave(-1550, 60, -2554) minecraft:overworld
+[16Jul2026 10:02:50.311] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: BatmanGordo1 was doomed to fall
+[16Jul2026 10:02:50.313] [Server thread/INFO] [com.lothrazar.simpletomb.ModTomb/]: simpletomb.message.new_grave(-1418, 43, -2162) minecraft:overworld
+[16Jul2026 10:03:10.040] [Server thread/INFO] [com.lothrazar.simpletomb.ModTomb/]: 0 result 0 air
+[16Jul2026 10:03:10.041] [Server thread/INFO] [com.lothrazar.simpletomb.ModTomb/]: 0 result 1 copper_backpack
+[16Jul2026 10:03:10.041] [Server thread/INFO] [com.lothrazar.simpletomb.ModTomb/]: 0 result 1 gold_backpack
+[16Jul2026 10:03:47.606] [Server thread/INFO] [net.minecraft.world.entity.npc.Villager/]: Villager Villager['Librarian'/25859, l='ServerLevel[world]', x=-1461.30, y=68.00, z=-3052.30] died, message: 'Librarian was slain by Ghost'
+[16Jul2026 10:03:54.410] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Pradolf56 has made the advancement [Splintering II]
+[16Jul2026 10:03:58.679] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Pradolf56 has made the advancement [A Flaming Sword]
+[16Jul2026 10:04:03.505] [Server thread/INFO] [net.minecraft.world.entity.npc.Villager/]: Villager Villager['Fletcher'/25860, l='ServerLevel[world]', x=-1461.48, y=68.00, z=-3054.46] died, message: 'Fletcher was slain by Ghost'
+[16Jul2026 10:04:39.758] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: benjamon lost connection: Disconnected
+[16Jul2026 10:04:39.759] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: benjamon left the game
+[16Jul2026 10:04:48.211] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: benjamon[/100.81.212.94:65438] logged in with entity id 27700 at (-1454.9945770762547, 91.9375, -3065.3886766921255)
+[16Jul2026 10:04:48.214] [Server thread/INFO] [ModernFix/]: Using enhanced recipe sync for player benjamon
+[16Jul2026 10:04:48.215] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: benjamon joined the game
+[16Jul2026 10:04:52.459] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Juandi3531 was shot by Skeleton
+[16Jul2026 10:04:52.461] [Server thread/INFO] [com.lothrazar.simpletomb.ModTomb/]: simpletomb.message.new_grave(-1430, 0, -2185) minecraft:overworld
+[16Jul2026 10:04:52.542] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: benjamon has made the advancement [Who You Gonna Call?]
+[16Jul2026 10:05:05.459] [Server thread/INFO] [com.lothrazar.simpletomb.ModTomb/]: 0 result 0 air
+[16Jul2026 10:05:05.460] [Server thread/INFO] [com.lothrazar.simpletomb.ModTomb/]: 0 result 1 copper_backpack
+[16Jul2026 10:05:05.460] [Server thread/INFO] [com.lothrazar.simpletomb.ModTomb/]: 0 result 1 iron_backpack
+[16Jul2026 10:05:05.460] [Server thread/INFO] [com.lothrazar.simpletomb.ModTomb/]: 0 result 1 copper_backpack
+[16Jul2026 10:05:05.460] [Server thread/INFO] [com.lothrazar.simpletomb.ModTomb/]: 0 result 1 copper_backpack
+[16Jul2026 10:05:05.461] [Server thread/INFO] [com.lothrazar.simpletomb.ModTomb/]: 0 result 1 backpack
+[16Jul2026 10:05:05.461] [Server thread/INFO] [com.lothrazar.simpletomb.ModTomb/]: 0 result 1 gold_backpack
+[16Jul2026 10:05:14.565] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Juandi3531 was shot by Skeleton
+[16Jul2026 10:05:14.568] [Server thread/INFO] [com.lothrazar.simpletomb.ModTomb/]: simpletomb.message.new_grave(-1421, -2, -2190) minecraft:overworld
+[16Jul2026 10:05:30.673] [Server thread/INFO] [com.lothrazar.simpletomb.ModTomb/]: 0 result 0 air
+[16Jul2026 10:05:30.673] [Server thread/INFO] [com.lothrazar.simpletomb.ModTomb/]: 0 result 1 copper_backpack
+[16Jul2026 10:05:30.674] [Server thread/INFO] [com.lothrazar.simpletomb.ModTomb/]: 0 result 1 iron_backpack
+[16Jul2026 10:05:30.674] [Server thread/INFO] [com.lothrazar.simpletomb.ModTomb/]: 0 result 1 copper_backpack
+[16Jul2026 10:05:30.674] [Server thread/INFO] [com.lothrazar.simpletomb.ModTomb/]: 0 result 1 copper_backpack
+[16Jul2026 10:05:30.674] [Server thread/INFO] [com.lothrazar.simpletomb.ModTomb/]: 0 result 1 backpack
+[16Jul2026 10:05:30.674] [Server thread/INFO] [com.lothrazar.simpletomb.ModTomb/]: 0 result 1 gold_backpack
+[16Jul2026 10:07:02.089] [Worker-Main-2/INFO] [citadel/]: merged 6 surface rules with vanilla rule SequenceRuleSource
+[16Jul2026 10:08:40.390] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Juandi3531 lost connection: Disconnected
+[16Jul2026 10:08:40.390] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Juandi3531 left the game
+[16Jul2026 10:08:47.471] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <benjamon> z
+[16Jul2026 10:08:47.637] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <benjamon> z
+[16Jul2026 10:08:47.867] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <benjamon> z
+[16Jul2026 10:08:47.992] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <benjamon> z
+[16Jul2026 10:08:48.290] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <benjamon> z
+[16Jul2026 10:08:48.371] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <benjamon> z
+[16Jul2026 10:08:51.961] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: BatmanGordo1 lost connection: Disconnected
+[16Jul2026 10:08:51.962] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: BatmanGordo1 left the game
+[16Jul2026 10:08:58.559] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Pradolf56 lost connection: Disconnected
+[16Jul2026 10:08:58.559] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Pradolf56 left the game
+[16Jul2026 10:09:11.258] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: MiiMamii lost connection: Disconnected
+[16Jul2026 10:09:11.259] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: MiiMamii left the game
+[16Jul2026 10:09:21.070] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Juandi3531[/100.123.37.118:51709] logged in with entity id 31258 at (-1353.7989049269343, 68.0, -2818.9323163293493)
+[16Jul2026 10:09:21.073] [Server thread/INFO] [ModernFix/]: Using enhanced recipe sync for player Juandi3531
+[16Jul2026 10:09:21.077] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Juandi3531 joined the game
+[16Jul2026 10:09:22.775] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: BatmanGordo1[/100.109.75.93:59009] logged in with entity id 31285 at (-1768.6658710631318, 64.0, -2646.483038958738)
+[16Jul2026 10:09:22.779] [Server thread/INFO] [ModernFix/]: Using enhanced recipe sync for player BatmanGordo1
+[16Jul2026 10:09:22.780] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: BatmanGordo1 joined the game
